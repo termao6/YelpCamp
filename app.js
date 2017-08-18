@@ -18,8 +18,8 @@ var campgroundRoutes    = require("./routes/campgrounds"),
     indexRoutes         = require("./routes/index");
 
 
-mongoose.connect("mongodb://localhost/yelp_camp");
-// set default to .ejs files and look for css and js stuff in public folder
+//mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://teresa:picklechu@ds149373.mlab.com:49373/yelpcampdb123");
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(methodOverride("_method"));
